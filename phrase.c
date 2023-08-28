@@ -8,7 +8,7 @@
 
 void source(void)
 {
-    // OPEN CSV FILE
+    // OPEN TXT FILE
     FILE *file = fopen("source.txt", "w+");
 
     if (!file)
