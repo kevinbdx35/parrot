@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-void swappy(int *a, int *b)
+void swappy(char *a, char *b)
 {
 	char tmp = *a;
 	*a = *b;
