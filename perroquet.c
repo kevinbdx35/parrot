@@ -5,6 +5,14 @@
 
 void perroquet(void)
 {
+    // OPEN TXT FILE
+    FILE *file = fopen("peroq.def", "w+");
+
+    if (!file)
+    {
+        return 1;
+    }
+
 
     // GET THE WORD OF PERROQUET
     char parrot[100];
@@ -12,6 +20,14 @@ void perroquet(void)
     printf("Veuillez entrer le mot clef du \"PERROQUET\" : \n");
     fgets(parrot, 100, stdin);
     printf("Le mot du \"PERROQUET\" est : %s", parrot);
+
+    // PRINT TO FILE
+    fprintf(file, "%s\n", parrot);
+
+    // CLOSE FILE
+    fclose(file);
+
+    return 0;
 
 
 }
