@@ -8,7 +8,7 @@
 void phrase(void);
 void perroquet(void);
 void crypt(void);
-void swappy(int *a, int *b);
+void swappy(char *a, char *b);
 
 
 #endif // HEADER_H_INCLUDED
