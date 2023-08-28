@@ -4,12 +4,13 @@
 #include <string.h>
 #include <time.h>
 
+#define MAX 100
 
 void crypt(void)
 {
 
     // GET THE WORD OF PERROQUET
-    char *phrase= "HI!DD";
+    char *phrase= "HI!HI!HI!!!!!!!!!!!!!!!!!!";
     char *parrot="toto";
 
     char *mask = NULL;
@@ -23,8 +24,13 @@ void crypt(void)
     length = abs(strlen(phrase) - strlen(parrot));
     printf("%i\n", length);
 
-    char buffer[length];
-    strncat(strcpy(buffer, parrot), parrot, length);
+
+    char buffer[MAX];
+    for(int j = 1; j < length, j++)
+    {
+        strncat(strcpy(buffer, parrot), parrot, length);
+    }
+
 
     printf("%s\n", buffer);
 
