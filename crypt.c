@@ -8,8 +8,8 @@ void crypt(void)
 {
 
     // GET THE WORD OF PERROQUET
-    char *phrase= "HI!HI!HI!";
-    char *parrot="tata";
+    char *phrase= "HI!DD";
+    char *parrot="toto";
 
     printf("%s %s\n", phrase, parrot);
 
@@ -20,8 +20,14 @@ void crypt(void)
         x = phrase[i];
         char *y = NULL;
         y = parrot[i];
+        char *mask = NULL;
+
+        mask = abs(x - y);
+
         swappy(&x, &y);
+
         printf("%c\n", x);
+        printf("%i\n", mask);
 
     }
 
