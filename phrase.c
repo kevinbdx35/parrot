@@ -6,10 +6,10 @@
 #include "header.h"
 
 
-void phrase(void)
+void source(void)
 {
     // OPEN CSV FILE
-    FILE *file = fopen("phrase.csv", "w+");
+    FILE *file = fopen("source.txt", "w+");
 
     if (!file)
     {
