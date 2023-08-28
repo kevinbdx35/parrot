@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 
-void phrase(void);
+void source(void);
 void perroquet(void);
 void crypt(void);
 void swappy(char *a, char *b);
