@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 
+void menu(void);
 void source(void);
 void perroquet(void);
 void crypt(void);

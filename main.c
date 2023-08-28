@@ -5,8 +5,7 @@
 
 int main(void)
 {
-    source();
-    perroquet();
+    //menu();
     crypt();
 
     return 0;

@@ -8,21 +8,26 @@ void crypt(void)
 {
 
     // GET THE WORD OF PERROQUET
-    char *parrot="toto";
-    char *phrase="titi mange";
+    char *phrase= "HI!HI!HI!";
+    char *parrot="tata";
 
-    printf("%s %s\n", parrot, phrase);
+    printf("%s %s\n", phrase, parrot);
 
-
-    for(int i = 0, m =strlen(phrase); i < m ; i++)
+    for(int i = 0, m = strlen(phrase); i < m ; i++)
     {
-        for(int j = 0, n =strlen(parrot); j < n ; j++)
 
-            {
-               printf("%c", phrase[i]);
-               printf("%c", parrot[j]);
-            }
+        char *x = NULL;
+        x = phrase[i];
+        char *y = NULL;
+        y = parrot[i];
+        swappy(&x, &y);
+        printf("%c\n", x);
+
     }
+
+
+
+
 
 
 }
