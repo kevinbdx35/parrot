@@ -48,5 +48,4 @@ do
     }
      while (choice < 1 || choice > 5);;
 
-    return 0;
 }

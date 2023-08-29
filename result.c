@@ -34,7 +34,5 @@ void result(void)
 
     // CLOSE FILE
     fclose(file);
-
-    return 0;
 }
 

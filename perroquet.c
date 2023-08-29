@@ -10,7 +10,7 @@ void perroquet(void)
 
     if (!file)
     {
-        printf("Erreur lors de l'ouverture d'un fichier");
+        printf("Erreur lors de la création d'un fichier");
         exit(1);
     }
 
@@ -30,9 +30,6 @@ void perroquet(void)
 
     // CLOSE FILE
     fclose(file);
-
-    return 0;
-
 
 }
 
