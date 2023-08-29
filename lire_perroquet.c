@@ -6,7 +6,7 @@
 
 #define TAILLE_MAX 1000
 
-void lire_perroquet(void)
+char *lire_perroquet(void)
 {
 
     char chaine[TAILLE_MAX]="";
@@ -30,6 +30,6 @@ void lire_perroquet(void)
     // CLOSE FILE
     fclose(file);
 
-    return 0;
+    return chaine;
 
 }
