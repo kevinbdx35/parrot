@@ -9,6 +9,7 @@ void menu(void);
 void source(void);
 void perroquet(void);
 void crypt(void);
+void mask(void)
 void swappy(char *a, char *b);
 
 
