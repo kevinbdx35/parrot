@@ -14,8 +14,9 @@ do
         printf("\n\n\n1. Choix du texte source\n");
         printf("2. Choix du perroquet\n");
         printf("3. Lire le perroquet\n");
-        printf("4. Lire le resultat\n");
-        printf("5. Exit\n\n\n");
+        printf("4. Lire le resultat chiffré\n");
+        printf("5. Lire et déchiffré le résultat\n");
+        printf("6. Exit\n\n\n");
 
         printf("Entrez votre choix :  ");
         scanf("%d",&choice);
@@ -39,6 +40,10 @@ do
                 break;
 
             case 5:
+                decryt();
+                break;
+
+            case 6:
                 break;
 
             default:
@@ -46,6 +51,6 @@ do
         }
 
     }
-     while (choice != 5);;
+     while (choice != 6);;
 
 }

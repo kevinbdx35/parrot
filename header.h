@@ -11,6 +11,7 @@ void lire_source(char *source);
 void perroquet(void);
 char *lire_perroquet(void);
 char *crypt(void);
+char *decryt(void);
 void mask(void);
 void swappy(char *a, char *b);
 void result(void);
