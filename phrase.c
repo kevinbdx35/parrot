@@ -21,7 +21,7 @@ void source(void)
     char phrase[100];
 
     printf("Veuillez entrer le mot ou la phrase à chiffrer : \n");
-    //gets(phrase);
+    gets(phrase);
 
     fgets(phrase, 100, stdin);
 
