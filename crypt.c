@@ -26,9 +26,12 @@ void crypt(void)
 
 
     char buffer[MAX];
-    for(int j = 1; j < length, j++)
+
+    strncpy(buffer, parrot, length);
+
+    for(int j = 1; j < length; j++)
     {
-        strncat(strcpy(buffer, parrot), parrot, length);
+        strncat(buffer, parrot, length);
     }
 
 

@@ -23,7 +23,7 @@ void menu(void)
         {
             case 1:
                 goto toto;
-                //break;
+                break;
 
             case 2:
                 perroquet();

@@ -7,6 +7,8 @@
 void mask(void)
 {
 
+    char *mask = NULL;
+
 
 
 
