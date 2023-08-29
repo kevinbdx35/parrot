@@ -15,7 +15,8 @@ void result(void)
 
     if (!file)
     {
-        return 1;
+        printf("Erreur lors de l'ouverture d'un fichier");
+        exit(1);
     }
 
     // GET THE TEXT OR WORD FROM CRYPT

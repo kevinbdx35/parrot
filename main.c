@@ -5,11 +5,11 @@
 
 int main(void)
 {
-    //menu();
+    menu();
     //crypt();
     //lire_perroquet();
     //lire_source();
-    result();
+    //result();
 
     return 0;
 }

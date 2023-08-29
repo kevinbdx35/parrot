@@ -10,7 +10,8 @@ void perroquet(void)
 
     if (!file)
     {
-        return 1;
+        printf("Erreur lors de l'ouverture d'un fichier");
+        exit(1);
     }
 
 
@@ -18,7 +19,7 @@ void perroquet(void)
     char parrot[100];
 
     printf("Veuillez entrer le mot clef du \"PERROQUET\" : \n");
-    gets(parrot);
+    //gets(parrot);
 
 
     fgets(parrot, 100, stdin);
