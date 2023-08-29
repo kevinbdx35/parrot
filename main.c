@@ -6,7 +6,9 @@
 int main(void)
 {
     //menu();
-    crypt();
+    //crypt();
+    lire_perroquet();
+    lire_source();
 
     return 0;
 }

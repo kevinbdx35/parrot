@@ -7,11 +7,13 @@
 
 void menu(void);
 void source(void);
+char *lire_source(void);
 void perroquet(void);
-void lire_perroquet(void);
+char *lire_perroquet(void);
 void crypt(void);
 void mask(void);
 void swappy(char *a, char *b);
+void result(void);
 
 
 #endif // HEADER_H_INCLUDED
