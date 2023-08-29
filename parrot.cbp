@@ -34,6 +34,9 @@
 		<Unit filename="crypt.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="decrypt.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="header.h" />
 		<Unit filename="lire_perroquet.c">
 			<Option compilerVar="CC" />

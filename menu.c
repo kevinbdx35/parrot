@@ -15,7 +15,7 @@ do
         printf("2. Choix du perroquet\n");
         printf("3. Lire le perroquet\n");
         printf("4. Lire le resultat chiffré\n");
-        printf("5. Lire et déchiffré le résultat\n");
+        printf("5. Lire et déchiffrer le résultat\n");
         printf("6. Exit\n\n\n");
 
         printf("Entrez votre choix :  ");
