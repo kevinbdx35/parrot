@@ -50,9 +50,6 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="mask.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -63,9 +60,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="result.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="swap.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions />
