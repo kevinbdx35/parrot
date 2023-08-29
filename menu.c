@@ -9,13 +9,14 @@ void menu(void)
 
     int choice;
 
-    do
-    {
+
         printf("1. Choix du texte source\n");
         printf("2. Choix du perroquet\n");
         printf("3. Lire le perroquet\n");
         printf("4. Lire le resultat\n");
         printf("5. Exit\n\n\n");
+do
+    {
         printf("Entrez votre choix :  ");
         scanf("%d",&choice);
 
@@ -45,7 +46,7 @@ void menu(void)
         }
 
     }
-     while(choice != (1 || 2 || 3 || 4 || 5));
+     while (choice < 1 || choice > 5);;
 
     return 0;
 }
