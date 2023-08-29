@@ -48,10 +48,12 @@ do
                 break;
 
             case 6:
+                printf("Au revoir !\n");
                 break;
 
             default:
                 printf("\n\n\nOups! Il y a eu une erreur\n\n\n");
+                break;
         }
 
     }
