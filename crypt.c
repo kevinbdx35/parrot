@@ -6,9 +6,8 @@
 
 #define MAX 100
 
-void crypt(void)
+char *crypt(void)
 {
-
     // GET THE WORD OF PERROQUET
     char *phrase= "HI!HI!HI!!!!!!!!!!!!!!!!!!";
     char *parrot="toto";
@@ -53,6 +52,11 @@ void crypt(void)
 
         printf("%c", x);
         printf("\nle mask est %i", mask);
-        }
+    }
 
+
+
+int resulta = 125;
+
+return resulta;
 }

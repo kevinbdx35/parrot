@@ -5,11 +5,13 @@
 
 #include "header.h"
 
+#define TAILLE_MAX 1000
+
 
 void result(void)
 {
     // OPEN TXT FILE
-    FILE *file = fopen("dest.crt", "w+");
+    FILE *file = fopen("dest.crt", "rw+");
 
     if (!file)
     {
@@ -17,13 +19,17 @@ void result(void)
     }
 
     // GET THE TEXT OR WORD FROM CRYPT
-    char result[100];
-
-
-
+    //char resulta[100];
+    char resulta[TAILLE_MAX]="";
 
     // PRINT TO FILE
-    fprintf(file, "%s\n", result);
+    fprintf(file, "%s\n", crypt());
+
+     // READ DATA OF FILE
+    fgets(resulta, TAILLE_MAX, file);
+
+    // PRINT THESE DATA
+    printf("%s", resulta);
 
     // CLOSE FILE
     fclose(file);

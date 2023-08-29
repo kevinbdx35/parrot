@@ -10,7 +10,7 @@ void source(void);
 char *lire_source(void);
 void perroquet(void);
 char *lire_perroquet(void);
-void crypt(void);
+char *crypt(void);
 void mask(void);
 void swappy(char *a, char *b);
 void result(void);
