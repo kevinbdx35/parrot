@@ -11,7 +11,7 @@
 void result(void)
 {
     // OPEN TXT FILE
-    FILE *file = fopen("dest.crt", "rw+");
+    FILE *file = fopen("dest.crt", "w+");
 
     if (!file)
     {
@@ -19,11 +19,11 @@ void result(void)
     }
 
     // GET THE TEXT OR WORD FROM CRYPT
-    //char resulta[100];
     char resulta[TAILLE_MAX]="";
+    char *titi = crypt();
 
     // PRINT TO FILE
-    fprintf(file, "%s\n", crypt());
+    fprintf(file, "%s\n", titi);
 
      // READ DATA OF FILE
     fgets(resulta, TAILLE_MAX, file);

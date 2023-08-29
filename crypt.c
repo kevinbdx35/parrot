@@ -9,12 +9,12 @@
 char *crypt(void)
 {
     // GET THE WORD OF PERROQUET
-    char *phrase= "HI!HI!HI!!!!!!!!!!!!!!!!!!";
-    char *parrot="toto";
+    char *phrase= "toto";
+    char *parrot= lire_perroquet();
+
+    printf("%s", phrase);
 
     char *mask = NULL;
-
-
 
     int length = 0;
 
@@ -34,7 +34,7 @@ char *crypt(void)
     }
 
 
-    printf("%s\n", buffer);
+    printf("%s\n\n\n", buffer);
 
 
     for(int i = 0, m = strlen(phrase); i < m ; i++)
@@ -51,12 +51,15 @@ char *crypt(void)
         swappy(&x, &y);
 
         printf("%c", x);
-        printf("\nle mask est %i", mask);
+
+        //printf("\nle mask est %i", mask);
     }
 
 
 
-int resulta = 125;
+//char *resulta = "WOUUUUUU";
 
-return resulta;
+//printf("\n\n\n\n%s", );
+
+return buffer;
 }
