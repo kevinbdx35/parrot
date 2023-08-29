@@ -22,7 +22,7 @@ void menu(void)
         switch(choice)
         {
             case 1:
-                goto toto;
+                source();
                 break;
 
             case 2:
@@ -30,9 +30,11 @@ void menu(void)
                 break;
 
             case 3:
+                lire_perroquet();
                 break;
 
             case 4:
+                result();
                 break;
 
             case 5:
@@ -44,9 +46,6 @@ void menu(void)
 
     }
      while(choice != (1 || 2 || 3 || 4 || 5));
-
-    toto:
-            source();
 
     return 0;
 }
