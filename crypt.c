@@ -9,10 +9,11 @@
 char *crypt(void)
 {
     // GET THE WORD OF PERROQUET
-    char *phrase= "toto";
-    char *parrot= lire_perroquet();
+    const char *phrase;
+    const char *parrot;
+    phrase = lire_source();
+    parrot = lire_perroquet();
 
-    printf("%s", phrase);
 
     char *mask = NULL;
 
