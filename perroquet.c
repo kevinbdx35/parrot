@@ -18,6 +18,9 @@ void perroquet(void)
     char parrot[100];
 
     printf("Veuillez entrer le mot clef du \"PERROQUET\" : \n");
+    gets(parrot);
+
+
     fgets(parrot, 100, stdin);
     printf("Le mot du \"PERROQUET\" est : %s", parrot);
 
