@@ -6,7 +6,7 @@
 
 #define TAILLE_MAX 1000
 
-char *lire_perroquet(void)
+void lire_perroquet(char *parrot)
 {
 
     char chaine_perroquet[TAILLE_MAX]="";
@@ -27,8 +27,8 @@ char *lire_perroquet(void)
     // PRINT THESE DATA
     printf("Le mot perroquet est : %s", chaine_perroquet);
 
+    strcpy(parrot, chaine_perroquet);
+
     // CLOSE FILE
     fclose(file);
-
-    return chaine_perroquet;
 }

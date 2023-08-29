@@ -4,65 +4,24 @@
 #include <string.h>
 #include <time.h>
 
-#define MAX 100
+#define MAX 1000
 
-char *crypt(void)
+void crypt(char *resultat)
 {
-    // GET THE WORD OF PERROQUET
-    char buffer[MAX];
-
-    char *source;
+    const char *source;
     const char *parrot;
+
     lire_source(source);
-    parrot = lire_perroquet();
+    lire_perroquet(parrot);
 
-
-    char *mask = NULL;
-
-    int length = 0;
+    int perroquetLength = strlen(parrot);
+    int sourceLength = strlen(source);
 
     printf("%s %s\n", source, parrot);
 
-    length = abs(strlen(source) - strlen(parrot));
-    printf("%i\n", length);
-
-
-
-
-    strncpy(buffer, parrot, length);
-
-    for(int j = 1; j < length; j++)
-    {
-        strncat(buffer, parrot, length);
+   for (int i = 0; i < sourceLength; i++) {
+        resultat[i] = (source[i] + parrot[i % perroquetLength]) % 256;
     }
 
-
-    printf("%s\n\n\n", buffer);
-
-
-    for(int i = 0, m = strlen(source); i < m ; i++)
-    {
-
-        char *x = NULL;
-        x = source[i];
-        char *y = NULL;
-        y = buffer[i];
-
-
-        mask = abs(x - y);
-
-        swappy(&x, &y);
-
-        printf("%c", x);
-
-        //printf("\nle mask est %i", mask);
-    }
-
-
-
-//char *resulta = "WOUUUUUU";
-
-//printf("\n\n\n\n%s", );
-
-return buffer;
+    resultat[sourceLength] = '\0';
 }

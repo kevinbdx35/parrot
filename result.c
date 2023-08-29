@@ -20,11 +20,12 @@ void result(void)
     }
 
     // GET THE TEXT OR WORD FROM CRYPT
-    char resulta[TAILLE_MAX]="";
-    //char *titi = crypt();
+    const char *resultat;
+
+    crypt(resultat);
 
     // PRINT TO FILE
-    fprintf(file, "%s\n", "lalalala");
+    fprintf(file, "%s\n", resultat);
 
     // CLOSE FILE
     fclose(file);
