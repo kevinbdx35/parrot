@@ -9,9 +9,11 @@
 char *crypt(void)
 {
     // GET THE WORD OF PERROQUET
-    const char *phrase;
+    char buffer[MAX];
+
+    char *source;
     const char *parrot;
-    phrase = lire_source();
+    lire_source(source);
     parrot = lire_perroquet();
 
 
@@ -19,13 +21,13 @@ char *crypt(void)
 
     int length = 0;
 
-    printf("%s %s\n", phrase, parrot);
+    printf("%s %s\n", source, parrot);
 
-    length = abs(strlen(phrase) - strlen(parrot));
+    length = abs(strlen(source) - strlen(parrot));
     printf("%i\n", length);
 
 
-    char buffer[MAX];
+
 
     strncpy(buffer, parrot, length);
 
@@ -38,11 +40,11 @@ char *crypt(void)
     printf("%s\n\n\n", buffer);
 
 
-    for(int i = 0, m = strlen(phrase); i < m ; i++)
+    for(int i = 0, m = strlen(source); i < m ; i++)
     {
 
         char *x = NULL;
-        x = phrase[i];
+        x = source[i];
         char *y = NULL;
         y = buffer[i];
 

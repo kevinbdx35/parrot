@@ -5,13 +5,13 @@
 
 void menu(void)
 {
-    printf("\n\n\nBIENVENUE SUR LE SYSTEME DE CHIFFREMENT PERROQUET\n\n\n");
+    printf("\n\n\nBIENVENUE SUR LE SYSTEME DE CHIFFREMENT PERROQUET");
 
     int choice;
 
 do
     {
-        printf("1. Choix du texte source\n");
+        printf("\n\n\n1. Choix du texte source\n");
         printf("2. Choix du perroquet\n");
         printf("3. Lire le perroquet\n");
         printf("4. Lire le resultat\n");
@@ -46,6 +46,6 @@ do
         }
 
     }
-     while (choice < 1 || choice > 5);;
+     while (choice != 5);;
 
 }

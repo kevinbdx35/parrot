@@ -25,7 +25,7 @@ char *lire_perroquet(void)
     fgets(chaine_perroquet, TAILLE_MAX, file);
 
     // PRINT THESE DATA
-    printf("%s", chaine_perroquet);
+    printf("Le mot perroquet est : %s", chaine_perroquet);
 
     // CLOSE FILE
     fclose(file);

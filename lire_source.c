@@ -6,7 +6,7 @@
 
 #define TAILLE_MAX 1000
 
-char *lire_source(void)
+void lire_source(char *source)
 {
 
     char chaine_source[TAILLE_MAX]="";
@@ -27,8 +27,8 @@ char *lire_source(void)
     // PRINT THESE DATA
     printf("%s", chaine_source);
 
+    strcpy(source, chaine_source);
+
     // CLOSE FILE
     fclose(file);
-
-    return chaine_source;
 }
