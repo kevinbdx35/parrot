@@ -41,6 +41,9 @@
 		<Unit filename="lire_perroquet.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="lire_result.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lire_source.c">
 			<Option compilerVar="CC" />
 		</Unit>

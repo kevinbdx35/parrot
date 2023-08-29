@@ -8,10 +8,13 @@
 #define TAILLE_MAX 1000
 
 
-void result(void)
+void lire_result(void)
 {
+
+    char chaine_result[TAILLE_MAX]="";
+
     // OPEN TXT FILE
-    FILE *file = fopen("dest.crt", "w+");
+    FILE *file = fopen("dest.crt", "r+");
 
     if (!file)
     {
@@ -19,12 +22,11 @@ void result(void)
         exit(1);
     }
 
-    // GET THE TEXT OR WORD FROM CRYPT
-    char resulta[TAILLE_MAX]="";
-    //char *titi = crypt();
+    // READ DATA OF FILE
+    fgets(chaine_result, TAILLE_MAX, file);
 
-    // PRINT TO FILE
-    fprintf(file, "%s\n", "lalalala");
+    // PRINT THESE DATA
+    printf("Le mot chiffré est : %s", chaine_result);
 
     // CLOSE FILE
     fclose(file);

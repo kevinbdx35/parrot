@@ -36,7 +36,7 @@ do
                 break;
 
             case 4:
-                result();
+                lire_result();
                 break;
 
             case 5:

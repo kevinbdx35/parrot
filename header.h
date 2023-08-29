@@ -15,6 +15,6 @@ char *decryt(void);
 void mask(void);
 void swappy(char *a, char *b);
 void result(void);
-
+void lire_result(void);
 
 #endif // HEADER_H_INCLUDED
