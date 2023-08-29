@@ -11,7 +11,7 @@ void menu(void)
 
     int choice;
     char parrot = "";
-    char ciphertext[MAX];
+
 
 do
     {
