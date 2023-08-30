@@ -1,14 +1,5 @@
 # PROJET : PARROT
 
-Courte description de votre projet en une ou deux phrases.
-
-## Table des matières
-
-- [Introduction](#aperçu)
-- [Prérequis](#prérequis)
-- [Installation](#installation)
-- [Licence](#licence)
-
 ## Introduction du projet
 
 On souhaite à partir d’un fichier source, faire en sorte de le chiffrer en utilisant l’algorithme du « perroquet ».
@@ -54,18 +45,4 @@ distant.
 **Note :** Vous utiliserez un dépôt distant afin de sauvegarder l'ensemble de vos fichiers et d'assurer le suivi. Les fichiers suivis seront uniquement les .c et .h.
 
 Bon courage !
-
-
-## Prérequis
-
-Indiquez les prérequis nécessaires pour exécuter votre projet. Cela pourrait inclure les outils, bibliothèques, dépendances ou environnement spécifique.
-
-## Installation
-
-Expliquez comment installer et configurer votre projet. Étapes spécifiques à suivre pour mettre en place l'environnement nécessaire.
-
-```bash
-git clone https://github.com/votre-utilisateur/votre-projet.git
-cd votre-projet
-make
 
