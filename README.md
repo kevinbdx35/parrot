@@ -18,33 +18,40 @@ ASCII caractère par caractère.
 
 ### Illustration du principe du perroquet :
 
-| Colonne 1 | Colonne 2 |
+| Dénomination | Exemple |
 |-----------|-----------|
 | Mot source à chiffrer  | Olivier   |
 | Perroquet   | abcd   |
 | Résultat en calcul ascii   | (‘O’-‘a’)(‘l’-‘b’)(‘i’-‘c’)(‘v’-‘d’)(‘i’-‘a’)(‘e’-‘b’)(‘r’-‘c’)  |
 | Résultat   | Concaténation des codes ASCII   |
 
+L’utilisateur devra lui-même définir son propre perroquet.
 
-Concaténation des codes ASCII : `bcdebdacf`
+Celui qui chiffre et qui déchiffre doit donc connaître le mot (ou la phrase) du
+« perroquet ». On prévoira donc un fichier (« peroq.def ») contenant la chaine de
+caractères du perroquet.
 
-L'utilisateur devra définir son propre mot-clé perroquet. Celui qui chiffre et déchiffre le texte doit connaître ce mot ou phrase du "perroquet". Un fichier nommé "peroq.def" contiendra la chaîne de caractères du perroquet.
+On disposera de 2 fichiers.
+ - Source (« source.txt ») : contenant le texte à chiffrer
+ - Résultat (« dest.crt ») : contenant le texte chiffré
 
-Le projet nécessitera deux fichiers :
-- Source ("source.txt") : contenant le texte à chiffrer
-- Résultat ("dest.crt") : contenant le texte chiffré
 
-De plus, la source sera supprimée après le chiffrement pour ne conserver que le fichier chiffré.
+De plus, on prévoira de supprimer la source après chiffrage de telle manière à ne conserver que
+le fichier chiffré.
 
-Pour faciliter l'utilisation du programme, un menu simple et convivial sera proposé à l'utilisateur, incluant l'ensemble des fonctionnalités.
+Afin de faciliter l’utilisation de votre programme, vous proposerez à l’utilisateur un menu
+simple et convivial implémentant l’ensemble des fonctionnalités.
 
-À la fin du projet, vous déposerez l'intégralité du projet dans la section "Travaux". Cela inclura un fichier zip de votre projet avec tous les fichiers nécessaires à son exécution, ainsi qu'un fichier texte contenant le lien vers votre dépôt distant.
+A l’issue de la durée du projet, vous déposerez dans la section "Travaux", le projet dans sa
+globalité. Vous y mettrez le fichier zippé de votre projet ainsi que tous les fichiers nécessaires
+à son exécution. Vous mettrez également un fichier texte contenant le lien vers votre dépôt
+distant.
 
-**CONSEIL :** Pour favoriser la réutilisation, créez des fonctions indépendantes en leur attribuant des rôles spécifiques.
+**CONSEIL :** En vue de faciliter la réutilisation des éléments, créer des fonctions indépendantes en leur définissant pour chacune un rôle bien précis.
 
 ---
 
-**Note :** Vous devriez utiliser un dépôt distant pour sauvegarder l'ensemble de vos fichiers et assurer leur suivi. Seuls les fichiers .c et .h seront suivis.
+**Note :** Vous utiliserez un dépôt distant afin de sauvegarder l'ensemble de vos fichiers et d'assurer le suivi. Les fichiers suivis seront uniquement les .c et .h.
 
 Bon courage !
 
