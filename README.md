@@ -1,4 +1,4 @@
-# Parrot
+# PROJET : PARROT
 
 Courte description de votre projet en une ou deux phrases.
 
@@ -9,23 +9,22 @@ Courte description de votre projet en une ou deux phrases.
 - [Installation](#installation)
 - [Licence](#licence)
 
-## Aperçu
+## Introduction du projet
 
-# PROJET : CHIFFRAGE
+On souhaite à partir d’un fichier source, faire en sorte de le chiffrer en utilisant l’algorithme du « perroquet ».
 
-L'objectif de ce projet est de chiffrer un fichier source en utilisant l'algorithme du "perroquet". Cet algorithme se base sur un mot-clé (le perroquet) pour chiffrer le texte en calculant la différence ASCII caractère par caractère.
+Cet algorithme repose sur un mot (le perroquet) qui permet de chiffrer en calculant la différence
+ASCII caractère par caractère.
 
-## Illustration du principe du perroquet :
+### Illustration du principe du perroquet :
 
-Mot source à chiffrer : Olivier
-Mot-clé (perroquet) : abcd
+| Colonne 1 | Colonne 2 |
+|-----------|-----------|
+| Mot source à chiffrer  | Olivier   |
+| Perroquet   | abcd   |
+| Résultat en calcul ascii   | (‘O’-‘a’)(‘l’-‘b’)(‘i’-‘c’)(‘v’-‘d’)(‘i’-‘a’)(‘e’-‘b’)(‘r’-‘c’)  |
+| Résultat   | Concaténation des codes ASCII   |
 
-|Résultat en calcul ASCII|  |
-|---|---|
-|('O'-'a')|('l'-'b')|
-|('i'-'c')|('v'-'d')|
-|('i'-'a')|('e'-'b')|
-|('r'-'c')|  |
 
 Concaténation des codes ASCII : `bcdebdacf`
 
