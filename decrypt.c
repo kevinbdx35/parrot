@@ -6,7 +6,7 @@
 
 #define MAX 100
 
-char *decryt(void)
+char *decrypt(void)
 {
 
 }

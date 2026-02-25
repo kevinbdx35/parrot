@@ -10,7 +10,7 @@ void menu(void)
     printf("\n\n\nBIENVENUE SUR LE SYSTEME DE CHIFFREMENT PERROQUET");
 
     int choice;
-    char parrot = "";
+    char parrot[MAX] = "";
 
 
 do
@@ -44,7 +44,7 @@ do
                 break;
 
             case 5:
-                decryt();
+                decrypt();
                 break;
 
             case 6:
@@ -57,7 +57,7 @@ do
         }
 
     }
-     while (choice != 6);;
+     while (choice != 6);
 
 }
 

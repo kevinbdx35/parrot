@@ -1,53 +1,39 @@
-# PROJET : PARROT
+# Parrot Cipher
 
-## Introduction du projet
+A C program that encrypts and decrypts text using the "parrot" cipher algorithm.
 
-On souhaite à partir d’un fichier source, faire en sorte de le chiffrer en utilisant l’algorithme du « perroquet ».
+## Technologies
 
-Cet algorithme repose sur un mot (le perroquet) qui permet de chiffrer en calculant la différence
-ASCII caractère par caractère.
+- C (C99)
+- Code::Blocks
 
-### Illustration du principe du perroquet :
+## How It Works
 
-| Dénomination | Exemple |
-|-----------|-----------|
-| Mot source à chiffrer  | Olivier   |
-| Perroquet   | abcd   |
-| Résultat en calcul ascii   | (‘O’-‘a’)(‘l’-‘b’)(‘i’-‘c’)(‘v’-‘d’)(‘i’-‘a’)(‘e’-‘b’)(‘r’-‘c’)  |
-| Résultat   | Concaténation des codes ASCII   |
+The parrot cipher encrypts a source text using a key word (the "parrot"). Each character of the source is encoded by computing the ASCII difference with the corresponding character of the key (cycling through the key as needed).
 
-L’utilisateur devra lui-même définir son propre perroquet.
+| Element | Example |
+|---------|---------|
+| Source text | Olivier |
+| Parrot key | abcd |
+| Encoding | `('O'-'a')('l'-'b')('i'-'c')('v'-'d')('i'-'a')('e'-'b')('r'-'c')` |
+| Result | Concatenation of ASCII codes |
 
-Celui qui chiffre et qui déchiffre doit donc connaître le mot (ou la phrase) du
-« perroquet ». On prévoira donc un fichier (« peroq.def ») contenant la chaine de
-caractères du perroquet.
+## Files
 
-On disposera de 2 fichiers.
- - Source (« source.txt ») : contenant le texte à chiffrer
- - Résultat (« dest.crt ») : contenant le texte chiffré
+- `source.txt` — plaintext input
+- `dest.crt` — encrypted output
+- `peroq.def` — parrot key definition
 
+## Getting Started
 
-De plus, on prévoira de supprimer la source après chiffrage de telle manière à ne conserver que
-le fichier chiffré.
+Open `parrot.cbp` in Code::Blocks and build the project.
 
-Afin de faciliter l’utilisation de votre programme, vous proposerez à l’utilisateur un menu
-simple et convivial implémentant l’ensemble des fonctionnalités.
+## Improvements
 
-A l’issue de la durée du projet, vous déposerez dans la section "Travaux", le projet dans sa
-globalité. Vous y mettrez le fichier zippé de votre projet ainsi que tous les fichiers nécessaires
-à son exécution. Vous mettrez également un fichier texte contenant le lien vers votre dépôt
-distant.
+- Fixed type error: `char parrot = ""` → `char parrot[MAX]` in `menu.c`
+- Fixed typo: `decryt` → `decrypt` in `header.h`, `decrypt.c`, and `menu.c`
+- Removed double semicolon at end of `while` loop in `menu.c`
 
-**CONSEIL :** En vue de faciliter la réutilisation des éléments, créer des fonctions indépendantes en leur définissant pour chacune un rôle bien précis.
+## License
 
----
-
-**Note :** Vous utiliserez un dépôt distant afin de sauvegarder l'ensemble de vos fichiers et d'assurer le suivi. Les fichiers suivis seront uniquement les .c et .h.
-
-Bon courage !
-
-## Adresse Github
-```bash
-https://github.com/kevinbdx35/parrot
-```
-
+MIT
